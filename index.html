@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>bootstrap3 menu demo</title>
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="bootstrap-menu.css" />
+  <link rel="stylesheet" href="//wenzhixin.net.cn/css/fork.css" />
+    <style>
+      body {
+        margin: 50px;
+      }
+      pre {
+        margin: 0 300px;
+      }
+    </style>
+</head>
+<body>
+  <a href="https://github.com/wenzhixin/bootstrap-menu" class="fork_me"></a>
+  
+  <div id="menu" class="bs-menu"></div>
+  
+  <pre>
+&lt;div id="menu" class="bs-menu"&gt;&lt;/div&gt;    
+
+$(function() {
+    $('#menu').bootstrapMenu({
+        isOpen: true,
+        data: [{
+            name: 'menu1',
+            title: 'Menu1',
+            icon: 'images/1.png',
+            children: [{
+                name: 'menu11',
+                title: 'Menu11'
+            }, {
+                name: 'menu12',
+                title: 'Menu12'
+            }, {
+                name: 'menu13',
+                title: 'Menu13'
+            }]
+        }, {
+            name: 'menu2',
+            title: 'Menu2',
+            icon: 'images/2.png',
+            children: [{
+                name: 'menu21',
+                title: 'Menu21'
+            }]
+        }, {
+            name: 'menu3',
+            title: 'Menu3',
+            icon: 'images/3.png',
+            children: [{
+                name: 'menu31',
+                title: 'Menu31'
+            }]
+        }, {
+            name: 'menu4',
+            title: 'Menu4',
+            icon: 'images/4.png',
+            children: [{
+                name: 'menu41',
+                title: 'Menu41'
+            }]
+        }],
+        onToggle: function(index) {
+            console.log(index);
+        },
+        onSelect: function(name) {
+            console.log(name);
+        }
+    });
+});
+  </pre>
+    
+    <script src="assets/jquery.min.js"></script>
+    <script src="bootstrap-menu.js"></script>
+    <script>
+        $(function() {
+            $('#menu').bootstrapMenu({
+                isOpen: true,
+                data: [{
+                    name: 'menu1',
+                    title: 'Menu1',
+                    icon: 'images/1.png',
+                    children: [{
+                        name: 'menu11',
+                        title: 'Menu11'
+                    }, {
+                        name: 'menu12',
+                        title: 'Menu12'
+                    }, {
+                        name: 'menu13',
+                        title: 'Menu13'
+                    }]
+                }, {
+                    name: 'menu2',
+                    title: 'Menu2',
+                    icon: 'images/2.png',
+                    children: [{
+                        name: 'menu21',
+                        title: 'Menu21'
+                    }]
+                }, {
+                    name: 'menu3',
+                    title: 'Menu3',
+                    icon: 'images/3.png',
+                    children: [{
+                        name: 'menu31',
+                        title: 'Menu31'
+                    }]
+                }, {
+                    name: 'menu4',
+                    title: 'Menu4',
+                    icon: 'images/4.png',
+                    children: [{
+                        name: 'menu41',
+                        title: 'Menu41'
+                    }]
+                }],
+                onToggle: function(index) {
+                    console.log(index);
+                },
+                onSelect: function(name) {
+                    console.log(name);
+                }
+            });
+        });
+    </script>
+  <script src="//wenzhixin.net.cn/js/analytics.js"></script>
+</body>
+</html>
