@@ -48,6 +48,7 @@
 .bs-menu a {
 	color: #555555;
 	text-decoration: none;
+	outline: none;
 }
 
 .bs-menu a:hover {
