@@ -1,6 +1,6 @@
 ## bootstrap menu
 
-Simple menu for bootstrap. [Examples and documentation](http://wenzhixin.net.cn/p/bootstrap-menu/)
+Simple menu for bootstrap. [Examples and documentation](http://wenzhixin.net.cn/2013/12/29/bootstrap_menu_guide)
 
 ### How to use:
 

@@ -52,6 +52,7 @@
 				html.push('</li>');
 			});
 			this.$el.append(html.join(''));
+			this.$el.css('width', this.options.width + 'px');
 			if (this.options.isOpen) {
 				this.$el.addClass('open');
 				this.index = 0;
@@ -120,6 +121,7 @@
 	};
 	
 	$.fn.bootstrapMenu.defaults = {
+		width: 180,
 		isOpen: false,
 		data: [],
 		onToggle: function(index) { return false; },
